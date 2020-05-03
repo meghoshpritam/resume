@@ -1,0 +1,102 @@
+.container {
+	$primaryColor: #e91e63;
+	$bgColor: #121212;
+	background: linear-gradient(
+		138deg,
+		rgba($bgColor, 1) 90%,
+		rgba($primaryColor, 1) 10%
+	);
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.head {
+		text-align: center;
+		color: white;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.imgContainer {
+			width: 250px;
+			height: 250px;
+			background: linear-gradient(
+				0deg,
+				rgba($primaryColor, 1) 50%,
+				rgba($primaryColor, 0) 50%
+			);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.ring {
+				width: 94%;
+				height: 94%;
+				background: $bgColor;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 94%;
+					height: 94%;
+					border-radius: 50%;
+				}
+			}
+		}
+		.heading {
+			padding: 30px 10px 10px 10px;
+			h1 {
+				.primary {
+					font-size: 3rem;
+				}
+				.secondary {
+					font-size: 1.4rem;
+					opacity: 50%;
+				}
+			}
+			h2 {
+				font-size: 2rem;
+				opacity: 95%;
+			}
+			p {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.3rem;
+			}
+		}
+	}
+	.callToAction {
+		margin: 5px 0 10px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.icon {
+			width: 30px;
+			height: 30px;
+			margin: 10px;
+			background: lighten($color: $bgColor, $amount: 20);
+			padding: 10px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			img {
+				height: 90%;
+			}
+			&:hover {
+				background: white;
+			}
+		}
+	}
+	.expandMore {
+		color: white;
+		font-size: 3rem;
+		background-color: lighten($color: $bgColor, $amount: 10);
+		border-radius: 50%;
+	}
+}
