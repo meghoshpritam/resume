@@ -29,7 +29,7 @@ export default () => {
 			</div>
 			<div className={style.callToAction}>
 				<a
-					href="https://twitter.com/meghoshpritam"
+					href="https://facebook.com/meghoshpritam"
 					className={style.icon}
 					target="_blank"
 				>
