@@ -4,6 +4,8 @@ import twitterIcon from '../../assets/icons/twitter.svg';
 import linkedInIcon from '../../assets/icons/linkedIn.svg';
 import gitHubIcon from '../../assets/icons/gitHub.svg';
 import telegramIcon from '../../assets/icons/telegram.svg';
+import facebookIcon from '../../assets/icons/facebook.svg';
+import img from '../../assets/img.jpg';
 
 export default () => {
 	return (
@@ -11,11 +13,7 @@ export default () => {
 			<div className={style.head}>
 				<div className={style.imgContainer}>
 					<div className={style.ring}>
-						<img
-							src="https://avatars.io/twitter/meghoshpritam"
-							alt="avatar"
-							className={style.avatarImg}
-						/>
+						<img src={img} alt="avatar" className={style.avatarImg} />
 					</div>
 				</div>
 				<div className={style.heading}>
@@ -30,6 +28,13 @@ export default () => {
 				</div>
 			</div>
 			<div className={style.callToAction}>
+				<a
+					href="https://twitter.com/meghoshpritam"
+					className={style.icon}
+					target="_blank"
+				>
+					<img src={facebookIcon} alt="facebook-handel" />
+				</a>
 				<a
 					href="https://twitter.com/meghoshpritam"
 					className={style.icon}
