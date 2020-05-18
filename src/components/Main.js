@@ -4,7 +4,6 @@ import twitterIcon from '../../assets/icons/twitter.svg';
 import linkedInIcon from '../../assets/icons/linkedIn.svg';
 import gitHubIcon from '../../assets/icons/gitHub.svg';
 import telegramIcon from '../../assets/icons/telegram.svg';
-import facebookIcon from '../../assets/icons/facebook.svg';
 import img from '../../assets/img.jpg';
 
 export default () => {
@@ -28,13 +27,6 @@ export default () => {
 				</div>
 			</div>
 			<div className={style.callToAction}>
-				<a
-					href="https://facebook.com/meghoshpritam"
-					className={style.icon}
-					target="_blank"
-				>
-					<img src={facebookIcon} alt="facebook-handel" />
-				</a>
 				<a
 					href="https://twitter.com/meghoshpritam"
 					className={style.icon}
