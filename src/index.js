@@ -11,7 +11,7 @@ export default class App extends Component {
 				<link
 					href="https://fonts.googleapis.com/icon?family=Material+Icons"
 					rel="stylesheet"
-				></link>
+				/>
 				<Main />
 				<Section id="skills" heading="Skills">
 					<Skills />
