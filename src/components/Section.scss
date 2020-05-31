@@ -1,0 +1,16 @@
+@import '../../assets/style/init';
+
+.container {
+	padding: 10px;
+	margin: 20px 0;
+	background: lighten($color: $bgColor, $amount: 1);
+
+	.heading {
+		padding: 5px 10px;
+		font-size: 2rem;
+	}
+
+	.child {
+		margin: 10px 0;
+	}
+}

@@ -1,4 +1,4 @@
-import { h, useEffect } from 'preact';
+import { h } from 'preact';
 import style from './Main.scss';
 import twitterIcon from '../../assets/icons/twitter.svg';
 import linkedInIcon from '../../assets/icons/linkedIn.svg';
@@ -57,7 +57,12 @@ export default () => {
 					<img src={telegramIcon} alt="telegram-handel" />
 				</a>
 			</div>
-			<span className={`material-icons ${style.expandMore}`}>expand_more</span>
+			<span
+				className={`material-icons ${style.expandMore}`}
+				onClick={() => window.location.replace('/#skills')}
+			>
+				expand_more
+			</span>
 		</div>
 	);
 };

@@ -1,6 +1,8 @@
 import { Component } from 'preact';
 import Main from './components/Main';
+import Skills from './components/Skills';
 import './style.scss';
+import Section from './components/Section';
 
 export default class App extends Component {
 	render() {
@@ -11,6 +13,9 @@ export default class App extends Component {
 					rel="stylesheet"
 				></link>
 				<Main />
+				<Section id="skills" heading="Skills">
+					<Skills />
+				</Section>
 			</div>
 		);
 	}

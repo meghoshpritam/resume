@@ -1,6 +1,6 @@
+@import '../../assets/style/init';
+
 .container {
-	$primaryColor: #e91e63;
-	$bgColor: #121212;
 	background: linear-gradient(
 		138deg,
 		rgba($bgColor, 1) 90%,
@@ -15,7 +15,6 @@
 	flex-direction: column;
 	.head {
 		text-align: center;
-		color: white;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -98,5 +97,11 @@
 		font-size: 3rem;
 		background-color: lighten($color: $bgColor, $amount: 10);
 		border-radius: 50%;
+
+		&:hover {
+			cursor: pointer;
+			background: white;
+			color: $primaryColor;
+		}
 	}
 }
