@@ -3,6 +3,7 @@ import Main from './components/Main';
 import Skills from './components/Skills';
 import './style.scss';
 import Section from './components/Section';
+import Footer from './components/Footer';
 
 export default class App extends Component {
 	render() {
@@ -16,6 +17,7 @@ export default class App extends Component {
 				<Section id="skills" heading="Skills">
 					<Skills />
 				</Section>
+				<Footer />
 			</div>
 		);
 	}

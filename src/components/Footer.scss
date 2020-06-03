@@ -1,0 +1,11 @@
+@import '../../assets/style/init';
+
+.footer {
+	background: lighten($color: #000000, $amount: 5);
+	padding: 15px 5px;
+	text-align: center;
+	.link {
+		text-decoration: none;
+		color: #c9c9c9;
+	}
+}
