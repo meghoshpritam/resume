@@ -82,23 +82,33 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
-			img {
-				height: 90%;
+			span {
+				font-size: 2rem;
+				color: white;
+				&:hover {
+					color: $primaryColor;
+				}
 			}
 			&:hover {
-				background: white;
+				background: $bgColor;
+				box-shadow: 3px 3px 7px rgba($primaryColor, 0.8);
 			}
 		}
 	}
 	.expandMore {
 		color: white;
-		font-size: 3rem;
+		font-size: 2.5rem;
+		height: 40px;
+		width: 40px;
 		background-color: lighten($color: $bgColor, $amount: 10);
 		border-radius: 50%;
-
+		display: flex;
+		justify-content: center;
+		align-content: center;
 		&:hover {
 			cursor: pointer;
-			background: white;
+			background: $bgColor;
+			box-shadow: 3px 3px 7px rgba($primaryColor, 0.8);
 			color: $primaryColor;
 		}
 	}

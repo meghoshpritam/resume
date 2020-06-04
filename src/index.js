@@ -10,7 +10,7 @@ export default class App extends Component {
 		return (
 			<div id="App">
 				<link
-					href="https://fonts.googleapis.com/icon?family=Material+Icons"
+					href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"
 					rel="stylesheet"
 				/>
 				<Main />

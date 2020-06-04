@@ -1,9 +1,5 @@
 import { h } from 'preact';
 import style from './Main.scss';
-import twitterIcon from '../../assets/icons/twitter.svg';
-import linkedInIcon from '../../assets/icons/linkedIn.svg';
-import gitHubIcon from '../../assets/icons/gitHub.svg';
-import telegramIcon from '../../assets/icons/telegram.svg';
 import img from '../../assets/img.jpg';
 
 export default () => {
@@ -22,7 +18,8 @@ export default () => {
 					</h1>
 					<h2>Junior Web Developer</h2>
 					<p>
-						<span className="material-icons">place</span> West Bengal, India
+						<span className="mdi mdi-map-marker-outline"></span> West Bengal,
+						India
 					</p>
 				</div>
 			</div>
@@ -32,7 +29,7 @@ export default () => {
 					className={style.icon}
 					target="_blank"
 				>
-					<img src={twitterIcon} alt="twitter-handel" />
+					<span className="mdi mdi-twitter"></span>
 				</a>
 
 				<a
@@ -40,29 +37,27 @@ export default () => {
 					className={style.icon}
 					target="_blank"
 				>
-					<img src={linkedInIcon} alt="linkedIn-handel" />
+					<span className="mdi mdi-linkedin"></span>
 				</a>
 				<a
 					href="https://github.com/meghoshpritam"
 					className={style.icon}
 					target="_blank"
 				>
-					<img src={gitHubIcon} alt="gitHub-handel" />
+					<span className="mdi mdi-github"></span>
 				</a>
 				<a
 					href="https://t.me/meghoshpritam"
 					className={style.icon}
 					target="_blank"
 				>
-					<img src={telegramIcon} alt="telegram-handel" />
+					<span className="mdi mdi-telegram"></span>
 				</a>
 			</div>
 			<span
-				className={`material-icons ${style.expandMore}`}
+				className={`mdi mdi-chevron-down ${style.expandMore}`}
 				onClick={() => window.location.replace('/#skills')}
-			>
-				expand_more
-			</span>
+			></span>
 		</div>
 	);
 };
