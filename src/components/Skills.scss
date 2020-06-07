@@ -23,12 +23,6 @@
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-	&:hover {
-		cursor: var(--cursor);
-		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-		transform: scale(1.01);
-	}
-
 	.iconProcess {
 		width: 85px;
 		height: 85px;
@@ -88,9 +82,18 @@
 	}
 
 	.title {
-		text-align: center;
 		font-size: 1.4rem;
 		margin: 5px 0;
+		display: flex;
+		justify-content: center;
+		a {
+			text-decoration: none;
+			color: inherit;
+			width: fit-content;
+			&:hover {
+				color: $primaryColor;
+			}
+		}
 	}
 
 	.description {

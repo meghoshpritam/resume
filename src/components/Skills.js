@@ -213,7 +213,7 @@ const Skill = ({ title, description, icon, url, progress, active }) => {
 		<div
 			className={style.skill}
 			style={`--cursor: ${url !== '#' ? 'pointer' : 'default'}`}
-			onClick={url !== '#' ? () => window.open(url, '_blank') : () => {}}
+			// onClick={url !== '#' ? () => window.open(url, '_blank') : () => {}}
 		>
 			<div className={style.iconProcess}>
 				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +224,15 @@ const Skill = ({ title, description, icon, url, progress, active }) => {
 				<div className={`${style.active} ${!active && style.inactive}`} />
 			</div>
 			<div>
-				<div className={style.title}>{title}</div>
+				<div className={style.title}>
+					{url !== '#' ? (
+						<a href={url} target="_blank">
+							{title}
+						</a>
+					) : (
+						<> {title}</>
+					)}
+				</div>
 				<div className={style.description}>{description}</div>
 			</div>
 		</div>
