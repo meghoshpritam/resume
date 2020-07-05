@@ -31,7 +31,20 @@ export default () => {
 				>
 					<span className="mdi mdi-twitter"></span>
 				</a>
-
+				<a
+					href="https://facebook.com/meghoshpritam"
+					className={style.icon}
+					target="_blank"
+				>
+					<span className="mdi mdi-facebook"></span>
+				</a>
+				<a
+					href="https://instagram.com/meghoshpritam"
+					className={style.icon}
+					target="_blank"
+				>
+					<span className="mdi mdi-instagram"></span>
+				</a>
 				<a
 					href="https://www.linkedin.com/in/meghoshpritam/"
 					className={style.icon}
