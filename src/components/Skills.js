@@ -210,32 +210,31 @@ const skills = [
 
 const Skill = ({ title, description, icon, url, progress, active }) => {
 	return (
-		<div
-			className={style.skill}
-			style={`--cursor: ${url !== '#' ? 'pointer' : 'default'}`}
-			// onClick={url !== '#' ? () => window.open(url, '_blank') : () => {}}
-		>
-			<div className={style.iconProcess}>
-				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-					<circle cx="50" cy="50" r="47" />
-					<circle cx="50" cy="50" r="47" style={`--per: ${progress}`} />
-				</svg>
-				<img src={icon} alt={`${title}-icon`} className={style.icon} />
-				<div className={`${style.active} ${!active && style.inactive}`} />
-			</div>
-			<div>
-				<div className={style.title}>
-					{url !== '#' ? (
-						<a href={url} target="_blank">
-							{title}
-						</a>
-					) : (
-						<> {title}</>
-					)}
+		<>
+			<div
+				className={style.skill}
+				// style={`--cursor: ${url !== '#' ? 'pointer' : 'default'}`}
+			>
+				<div>
+					<img src={icon} alt={`${title}-icon`} className={style.icon} />
+					<div>
+						<div className={style.title}>
+							{url !== '#' ? (
+								<a href={url} target="_blank">
+									{title}
+								</a>
+							) : (
+								<> {title}</>
+							)}
+						</div>
+						<div className={style.progressBar}>
+							<div style={{ width: `${progress}%` }}></div>
+						</div>
+					</div>
 				</div>
 				<div className={style.description}>{description}</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
