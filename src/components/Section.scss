@@ -8,6 +8,10 @@
 	.heading {
 		padding: 5px 10px;
 		font-size: 2rem;
+		position: sticky;
+		top: 0;
+		background: inherit;
+		z-index: 2;
 
 		a {
 			text-decoration: none;
