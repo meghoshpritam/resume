@@ -1,33 +1,32 @@
 @import '../../assets/style/init';
 
 .container {
-	background: linear-gradient(
-		138deg,
-		rgba($bgColor, 1) 90%,
-		rgba($primaryColor, 1) 10%
-	);
+	background: linear-gradient(138deg,
+			rgba($bgColor, 1) 90%,
+			rgba($primaryColor, 1) 10%);
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
 	.head {
 		text-align: center;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+
 		.imgContainer {
 			width: 250px;
 			height: 250px;
-			background: linear-gradient(
-				0deg,
-				rgba($primaryColor, 1) 50%,
-				rgba($primaryColor, 0) 50%
-			);
+			background: linear-gradient(0deg,
+					rgba($primaryColor, 1) 50%,
+					rgba($primaryColor, 0) 50%);
 			border-radius: 50%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+
 			.ring {
 				width: 94%;
 				height: 94%;
@@ -36,6 +35,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+
 				img {
 					width: 94%;
 					height: 94%;
@@ -43,21 +43,26 @@
 				}
 			}
 		}
+
 		.heading {
 			padding: 30px 10px 10px 10px;
+
 			h1 {
 				.primary {
 					font-size: 3rem;
 				}
+
 				.secondary {
 					font-size: 1.4rem;
 					opacity: 0.5;
 				}
 			}
+
 			h2 {
 				font-size: 2rem;
 				opacity: 0.95;
 			}
+
 			p {
 				display: flex;
 				align-items: center;
@@ -65,12 +70,43 @@
 				font-size: 1.3rem;
 			}
 		}
+
+		@media only screen and (max-width: 425px) {
+			.imgContainer {
+				max-width: 50vw;
+				max-height: 50vw;
+			}
+
+			.heading {
+				padding: 10px;
+
+				h1 {
+					.primary {
+						font-size: 2.5rem;
+					}
+
+					.secondary {
+						font-size: 1.2rem;
+					}
+				}
+
+				h2 {
+					font-size: 1.7rem;
+				}
+
+				p {
+					font-size: 1.1rem;
+				}
+			}
+		}
 	}
+
 	.callToAction {
 		margin: 5px 0 10px 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+
 		.icon {
 			width: 30px;
 			height: 30px;
@@ -82,19 +118,23 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
+
 			span {
 				font-size: 2rem;
 				color: white;
-				&:hover {
+			}
+
+			&:hover {
+				span {
 					color: $primaryColor;
 				}
-			}
-			&:hover {
+
 				background: $bgColor;
 				box-shadow: 3px 3px 7px rgba($primaryColor, 0.8);
 			}
 		}
 	}
+
 	.expandMore {
 		color: white;
 		font-size: 2.5rem;
@@ -105,11 +145,35 @@
 		display: flex;
 		justify-content: center;
 		align-content: center;
+
 		&:hover {
 			cursor: pointer;
 			background: $bgColor;
 			box-shadow: 3px 3px 7px rgba($primaryColor, 0.8);
 			color: $primaryColor;
+		}
+	}
+
+	@media only screen and (max-width: 440px) {
+		.callToAction {
+			margin: 5px 0 10px 0;
+
+			.icon {
+				width: 25px;
+				height: 25px;
+				margin: 7px;
+				padding: 7px;
+
+				span {
+					font-size: 1.8rem;
+				}
+			}
+		}
+
+		.expandMore {
+			font-size: 2.2rem;
+			height: 35px;
+			width: 35px;
 		}
 	}
 }
