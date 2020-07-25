@@ -1,0 +1,80 @@
+@import '../../assets/style/init';
+
+.education {
+	border-left: 3px solid $primaryColor;
+	margin: 20px 5px;
+	padding: 0 10px;
+	max-width: 400px;
+
+	.time {
+		display: flex;
+		justify-content: space-between;
+		padding: 3px 5px;
+
+		span {
+			color: $primaryColor;
+		}
+	}
+
+	.institutionName {
+		font-size: 1.7rem
+	}
+
+	.details {
+		padding: 0 5px;
+
+		div {
+			margin: 3px 0;
+		}
+
+		.location {
+			font-size: 1.05rem;
+			opacity: 0.8;
+		}
+
+		.under {
+			font-size: 1.1rem;
+			opacity: 0.9;
+			padding: 2px 0;
+		}
+
+		.course {
+			font-size: 1.3rem;
+			padding: 2px 0;
+		}
+
+		.specialization {
+			font-size: 1.5rem;
+			color: $primaryColor;
+		}
+	}
+
+	@media only screen and (max-width: 340px) {
+		.institutionName {
+			font-size: 1.5rem
+		}
+
+		.details {
+			.location {
+				font-size: 1rem;
+				opacity: 0.8;
+			}
+
+			.under {
+				font-size: 1.05rem;
+				opacity: 0.9;
+				padding: 2px 0;
+			}
+
+			.course {
+				font-size: 1.1rem;
+				padding: 2px 0;
+			}
+
+			.specialization {
+				font-size: 1.3rem;
+				color: $primaryColor;
+			}
+		}
+	}
+}

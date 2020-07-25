@@ -8,6 +8,16 @@
 	.heading {
 		padding: 5px 10px;
 		font-size: 2rem;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			width: fit-content;
+
+			&:hover {
+				color: $primaryColor;
+			}
+		}
 	}
 
 	.child {

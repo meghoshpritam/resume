@@ -4,6 +4,8 @@ import Skills from './components/Skills';
 import './style.scss';
 import Section from './components/Section';
 import Footer from './components/Footer';
+import Educations from './components/Educations';
+import Languages from './components/Languages';
 
 export default class App extends Component {
 	render() {
@@ -14,9 +16,17 @@ export default class App extends Component {
 					rel="stylesheet"
 				/>
 				<Main />
-				<Section id="skills" heading="Skills">
-					<Skills />
-				</Section>
+				<div class="contain-main">
+					<Section id="skills" heading="Skills">
+						<Skills />
+					</Section>
+					<Section id="educations" heading="Educations">
+						<Educations />
+					</Section>
+					<Section id="languages" heading="Languages">
+						<Languages />
+					</Section>
+				</div>
 				<Footer />
 			</div>
 		);

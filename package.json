@@ -16,15 +16,15 @@
 		"build/*"
 	],
 	"devDependencies": {
-		"eslint": "^6.0.1",
-		"eslint-config-synacor": "^3.0.4",
-		"node-sass": "^4.14.0",
-		"preact-cli": "^3.0.0-rc.6",
-		"sass-loader": "^8.0.2",
-		"sirv-cli": "^0.4.5"
+		"eslint": "^7.5.0",
+		"eslint-config-synacor": "^3.0.5",
+		"node-sass": "^4.14.1",
+		"preact-cli": "^3.0.0",
+		"sass-loader": "^9.0.2",
+		"sirv-cli": "^1.0.3"
 	},
 	"dependencies": {
-		"preact": "^10.1.0",
-		"preact-render-to-string": "^5.1.2"
+		"preact": "^10.4.6",
+		"preact-render-to-string": "^5.1.10"
 	}
 }
