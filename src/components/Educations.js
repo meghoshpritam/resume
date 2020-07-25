@@ -44,10 +44,15 @@ const Education = ({
 
 			<div className={style.institutionName}>{institutionName}</div>
 			<div className={style.details}>
-				<div className={style.location}>{location}</div>
+				<div className={style.location}>
+					<span className="mdi mdi-map-marker"></span>
+					{location}
+				</div>
 				<div className={style.under}>{under}</div>
 				<div className={style.course}>{degree}</div>
-				<div className={style.specialization}>{specialization}</div>
+				<div className={style.specialization}>
+					<span className="mdi mdi-school"></span> {specialization}
+				</div>
 			</div>
 		</div>
 	);
@@ -55,7 +60,7 @@ const Education = ({
 
 export default () => {
 	return (
-		<div className={style.educationContainer}>
+		<div className={style.educationsContainer}>
 			{educations.map((education) => (
 				<Education
 					key={education.institutionName}
