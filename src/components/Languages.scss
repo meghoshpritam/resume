@@ -1,0 +1,58 @@
+@import '../../assets/style/init';
+
+.language {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 3px solid $primaryColor;
+	border-image: linear-gradient(to left, rgba(12, 9, 9, 0) 30%, $primaryColor 32%, $primaryColor 68%, rgba(0, 0, 0, 0) 70%) 1;
+
+
+	.name {
+		font-size: 1.7rem;
+		padding-bottom: 5px;
+	}
+
+	.description {
+		font-size: 1.1rem;
+	}
+
+	.details {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1.2rem;
+		justify-content: center;
+		word-wrap: normal;
+		margin: 0 auto;
+
+		div {
+			margin: 7px;
+
+			.done {
+				color: $primaryColor;
+			}
+		}
+
+	}
+}
+
+.languagesContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+	gap: 20px 13px;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+@media only screen and (max-width: 216px) {
+	.languagesContainer {
+		display: inline;
+
+		.language {
+			margin: 20px 2px;
+		}
+	}
+}
