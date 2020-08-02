@@ -66,6 +66,13 @@ export default () => {
 				>
 					<span className="mdi mdi-telegram"></span>
 				</a>
+				<a
+					href="mailto:contact.meghoshpritam@gmail.com"
+					className={style.icon}
+					target="_blank"
+				>
+					<span className="mdi mdi-gmail"></span>
+				</a>
 			</div>
 			<span
 				className={`mdi mdi-chevron-down ${style.expandMore}`}

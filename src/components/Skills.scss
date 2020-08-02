@@ -13,13 +13,36 @@
 	div:first-child {
 		display: flex;
 
-		.icon {
-			display: block;
-			border-radius: 50%;
+		.logo {
+			position: relative;
 			height: 40px;
 			width: 40px;
 			min-width: 40px;
 			margin-right: 10px;
+
+			.icon {
+				height: 100%;
+				width: 100%;
+				display: block;
+				border-radius: 50%;
+			}
+
+			span {
+				position: absolute;
+				display: block;
+				background-color: #a8a8a8;
+				height: 8px;
+				width: 8px;
+				border-radius: 50%;
+				right: -2px;
+				bottom: -2px;
+
+
+			}
+
+			.active {
+				background-color: #31a24c;
+			}
 		}
 
 		div {

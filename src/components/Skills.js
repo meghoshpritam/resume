@@ -216,7 +216,10 @@ const Skill = ({ title, description, icon, url, progress, active }) => {
 				// style={`--cursor: ${url !== '#' ? 'pointer' : 'default'}`}
 			>
 				<div>
-					<img src={icon} alt={`${title}-icon`} className={style.icon} />
+					<div className={style.logo}>
+						<img src={icon} alt={`${title}-icon`} className={style.icon} />
+						{active ? <span className={style.active} /> : <span />}
+					</div>
 					<div>
 						<div className={style.title}>
 							{url !== '#' ? (
