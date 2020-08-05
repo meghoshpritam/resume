@@ -12,6 +12,46 @@
 		top: 0;
 		background: inherit;
 		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+
+		.dropdown {
+			position: relative;
+
+			&:hover {
+				cursor: pointer;
+
+				.dropdownContent {
+					display: block;
+				}
+			}
+
+			.dropdownContent {
+				display: none;
+				box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.7);
+
+				position: absolute;
+				right: -11px;
+				font-size: 1.2rem;
+				padding: 5px;
+				background-color: lighten($color: $bgColor, $amount: 1);
+
+				.option {
+					margin: 3px 0;
+					padding: 10px;
+
+					&:hover {
+						cursor: pointer;
+						background-color: lighten($color: $bgColor, $amount: 4);
+					}
+				}
+
+				.active {
+					color: $primaryColor;
+					background-color: lighten($color: $bgColor, $amount: 2);
+				}
+			}
+		}
 
 		a {
 			text-decoration: none;

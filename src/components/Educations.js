@@ -1,26 +1,6 @@
 import { h } from 'preact';
 import style from './Educations.scss';
-
-const educations = [
-	{
-		from: { month: 'July', year: 2017 },
-		to: { month: 'July', year: 2020 },
-		institutionName: 'Kanchrapara College',
-		location: 'Kanchrapara, North 24-PGS',
-		under: 'University of Kalyani',
-		degree: 'Bachelor of Science',
-		specialization: 'Computer Science',
-	},
-	{
-		from: { month: 'July', year: 2015 },
-		to: { month: 'July', year: 2017 },
-		institutionName: 'Majdia Rail Bazar High School',
-		location: 'Majdia, Nadia',
-		under: 'WBCHSE',
-		degree: 'Higher Secondary',
-		specialization: 'Science Stream',
-	},
-];
+import { educations } from '../data';
 
 const Education = ({
 	from,

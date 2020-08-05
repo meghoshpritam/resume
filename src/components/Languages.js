@@ -1,29 +1,6 @@
 import { h } from 'preact';
 import style from './Languages.scss';
-
-const languages = [
-	{
-		name: 'English',
-		description: 'Professional working proficiency',
-		read: true,
-		write: true,
-		speak: true,
-	},
-	{
-		name: 'Bengali',
-		description: 'Native or bilingual proficiency',
-		read: true,
-		write: true,
-		speak: true,
-	},
-	{
-		name: 'Hindi',
-		description: 'Limited working proficiency',
-		read: false,
-		write: false,
-		speak: true,
-	},
-];
+import { languages } from '../data';
 
 const Language = ({ name, description, read, write, speak }) => {
 	return (
