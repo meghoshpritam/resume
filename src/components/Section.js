@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState, useEffect, useRef } from 'preact/hooks';
 import style from './Section.scss';
 
 export default ({
@@ -9,8 +9,25 @@ export default ({
 	handleOptionSelection = (idx) => {},
 	select = 0,
 }) => {
-	const [open, setOpen] = useState();
+	const [open, setOpen] = useState(false);
 	const [selected, setSelected] = useState(select);
+	const childRef = useRef(null);
+	const listRef = useRef(null);
+
+	const [height, setHeight] = useState(0);
+	useEffect(() => {
+		window.addEventListener('scroll', (e) => {
+			if (
+				open &&
+				listRef.current &&
+				e.target.scrollingElement.scrollTop >
+					childRef.current.offsetTop +
+						childRef.current.offsetHeight -
+						listRef.current.offsetHeight
+			)
+				setOpen(false);
+		});
+	});
 	return (
 		<div className={style.container} id={id}>
 			<div className={style.heading}>
@@ -24,6 +41,7 @@ export default ({
 						<div
 							className={style.dropdownContent}
 							style={open ? { display: 'block' } : {}}
+							ref={listRef}
 						>
 							{sortOptions.map((option, idx) => (
 								<div
@@ -40,12 +58,13 @@ export default ({
 									{option}
 								</div>
 							))}
-							{/* <div className={`${style.option} ${style.active}`}>1111</div> */}
 						</div>
 					</div>
 				)}
 			</div>
-			<div className={style.child}>{children}</div>
+			<div className={style.child} ref={childRef}>
+				{children}
+			</div>
 		</div>
 	);
 };
