@@ -76,7 +76,7 @@ export default () => {
 			</div>
 			<span
 				className={`mdi mdi-chevron-down ${style.expandMore}`}
-				onClick={() => window.location.replace('/#skills')}
+				onClick={() => window.location.replace('/#about')}
 			></span>
 		</div>
 	);

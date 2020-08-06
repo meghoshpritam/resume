@@ -23,14 +23,13 @@
 				cursor: pointer;
 
 				.dropdownContent {
-					display: block;
+					display: block !important;
 				}
 			}
 
 			.dropdownContent {
 				display: none;
 				box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.7);
-				z-index: 5000;
 				position: absolute;
 				right: -11px;
 				font-size: 1.2rem;

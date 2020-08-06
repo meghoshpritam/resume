@@ -40,7 +40,7 @@ export default ({
 						></span>
 						<div
 							className={style.dropdownContent}
-							style={open ? { display: 'block' } : {}}
+							style={open ? { display: 'block' } : { display: 'none' }}
 							ref={listRef}
 						>
 							{sortOptions.map((option, idx) => (
