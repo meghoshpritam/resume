@@ -1,0 +1,16 @@
+@import '../../assets/style/init';
+
+.aboutContainer {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin-left: 10%;
+	padding: 0 15px;
+
+	p {
+		margin: 20px 0;
+	}
+
+	.highlight {
+		color: lighten($color: $primaryColor, $amount: 9);
+	}
+}

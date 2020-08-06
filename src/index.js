@@ -4,6 +4,7 @@ import Skills from './components/Skills';
 import './style.scss';
 import Section from './components/Section';
 import Footer from './components/Footer';
+import About from './components/About';
 import Educations from './components/Educations';
 import Languages from './components/Languages';
 import { skillsSortOptions, sortedSkills } from './data';
@@ -28,6 +29,9 @@ export default () => {
 			/>
 			<Main />
 			<div class="contain-main">
+				<Section id="about" heading="About">
+					<About />
+				</Section>
 				<Section
 					id="skills"
 					heading="Skills"
