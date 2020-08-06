@@ -10,6 +10,8 @@
 
 
 .skill {
+	position: relative;
+
 	div:first-child {
 		display: flex;
 
@@ -63,6 +65,18 @@
 				}
 			}
 
+			.progressBarContainer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1px;
+
+				span {
+					font-size: 1.5rem;
+					display: none;
+				}
+			}
+
 			.progressBar {
 				background-color: #000;
 				border-radius: 5px;
@@ -83,6 +97,17 @@
 		opacity: 0.5;
 		padding: 7px;
 	}
+
+	.descriptionDialog {
+		display: block !important;
+		position: absolute;
+		box-shadow: 0 10px 30px 15px #0e0e0e;
+		background-color: lighten($color: $bgColor, $amount: 1);
+		z-index: 1;
+		opacity: 1;
+		margin: 0 5px;
+		border-radius: 10px;
+	}
 }
 
 @media only screen and (max-width: 490px) {
@@ -94,6 +119,12 @@
 				div {
 					.title {
 						font-size: 1.2rem;
+					}
+				}
+
+				.progressBarContainer {
+					span {
+						display: block;
 					}
 				}
 			}
