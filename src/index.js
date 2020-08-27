@@ -22,6 +22,8 @@ export default () => {
 	}, []);
 
 	return (
+		<>
+		<meta name="google-site-verification" content="fIuOwmHWtDQlTF455jRP0KD_g-ytoEUHTHj9uN5clbg" />
 		<div id="App">
 			<link
 				href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"
@@ -50,5 +52,6 @@ export default () => {
 			</div>
 			<Footer />
 		</div>
+		</>
 	);
 };
